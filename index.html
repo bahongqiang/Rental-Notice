@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>房屋招租公告 - Rental Notice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.en, .zh, .jp').forEach(function(elem) {
+                if (elem.classList.contains(lang)) {
+                    elem.style.display = 'block';
+                } else {
+                    elem.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <style>
+        .header-image {
+            width: 100%; /* 图片宽度设置为100% */
+            height: auto; /* 高度自动调整，保持图片比例 */
+            max-height: 300px; /* 设置最大高度为300px，可以根据需要调整 */
+            object-fit: cover; /* 图片覆盖整个区域 */
+            display: block; /* 确保图片是块级元素 */
+            margin: 0 auto; /* 图片居中 */
+        }
+    </style>
+</head>
+<body onload="switchLanguage('zh')">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="switchLanguage('zh')">中文</a></li>
+                <li><a href="#home" onclick="switchLanguage('en')">English</a></li>
+                <li><a href="#home" onclick="switchLanguage('jp')">日本語</a></li>
+            </ul>
+        </nav>
+        <img src="images/房屋图片1.PNG" alt="Rental Notice" class="header-image">
+    </header>
+
+    <section id="home">
+        <h1 class="zh main-title">房屋招租公告</h1>
+        <h1 class="en main-title">Rental Notice</h1>
+        <h1 class="jp main-title">賃貸物件のお知らせ</h1>
+    </section>
+
+    <section id="details">
+        <h2 class="zh highlight">房屋地址</h2>
+        <h2 class="en highlight">Address</h2>
+        <h2 class="jp highlight">アドレス</h2>
+        <p class="zh">28 Levesque Street, Birkdale, Auckland 0626, New Zealand</p>
+        <p class="en">28 Levesque Street, Birkdale, Auckland 0626, New Zealand</p>
+        <p class="jp">28 Levesque Street, Birkdale, Auckland 0626, New Zealand</p>
+
+        <h2 class="zh highlight">租金</h2>
+        <h2 class="en highlight">Rent</h2>
+        <h2 class="jp highlight">賃料</h2>
+        <p class="zh">190纽币/周（包网费，水电费）</p>
+        <p class="en">NZD 190 per week (including internet, water, and electricity)</p>
+        <p class="jp">週190ニュージーランドドル（インターネット、水道、電気代込み）</p>
+
+        <h2 class="zh highlight">房屋情况</h2>
+        <h2 class="en highlight">Property Details</h2>
+        <h2 class="jp highlight">物件の詳細</h2>
+        <p class="zh">
+            本房屋共有三间房。目前房东和一位AUT学生，一位女士在住。本周五该女士房间将空出，房屋内包含各种家用设施，可拎包入住。
+            屋前屋后院子内还可以种植各种花卉，蔬菜，陶冶情操。
+        </p>
+        <p class="en">
+            This house has three bedrooms in total. Currently, the landlord and one AUT student, along with one lady, reside here. 
+            The lady's room will become available this Friday. The house is fully equipped with various household amenities, ready for immediate move-in. 
+            The front and back yards offer space for cultivating flowers, vegetables, and for relaxation.
+        </p>
+        <p class="jp">
+            この家には全部で3つのベッドルームがあります。現在、家主とAUTの学生1人、1人の女性が住んでいます。
+            今週の金曜日にその女性の部屋が空きます。家は様々な家庭用設備が整っており、すぐに引っ越し可能です。
+            前庭と裏庭には花や野菜を育てるスペースがあり、リラックスできます。
+        </p>
+
+        <h2 class="zh highlight">设施包括</h2>
+        <h2 class="en highlight">Facilities include</h2>
+        <h2 class="jp highlight">施設には以下が含まれます</h2>
+        <ul class="zh">
+            <li>光纤网络</li>
+            <li>水电</li>
+            <li>家用电器（60英寸电视，冰箱、洗衣机、微波炉，吸尘器等）</li>
+            <li>家具（床、书桌、衣柜等）</li>
+            <li>厨具（锅碗瓢盆，茶杯等）</li>
+            <li>※厨房炉灶类型：电陶炉<br>※热水器类型：电热水器</li>
+        </ul>
+        <ul class="en">
+            <li>Fiber optic internet</li>
+            <li>Utilities (water and electricity)</li>
+            <li>Appliances (60-inch TV, refrigerator, washing machine, microwave, vacuum cleaner, etc.)</li>
+            <li>Furniture (beds, desks, wardrobes, etc.)</li>
+            <li>Kitchenware (pots, pans, dishes, cups, etc.)</li>
+            <li>※Stove type: Electric cooktop<br>※Water heater type: Electric</li>
+        </ul>
+        <ul class="jp">
+            <li>光ファイバーインターネット</li>
+            <li>水道・電気</li>
+            <li>家電（60インチテレビ、冷蔵庫、洗濯機、電子レンジ、掃除機など）</li>
+            <li>家具（ベッド、机、ワードローブなど）</li>
+            <li>キッチン用品（鍋、フライパン、食器、カップなど）</li>
+            ※コンロの種類：電気コンロ<br>※給湯器の種類：電気給湯器</li>
+        </ul>
+
+         <h2 class="zh highlight">交通便利</h2>
+        <h2 class="en highlight">Convenient Transportation</h2>
+        <h2 class="jp highlight">便利な交通</h2>
+        <ul class="zh">
+            <li>距离最近的Levesque Street Shops车站步行3到5分钟，该车站可乘坐97R、942、966路车次到达。</li>
+            <li>距离McPhail Street车站步行4分钟，可乘坐933路直达奥克兰市中心，方便前往AUT和奥克兰大学。</li>
+        </ul>
+        <ul class="en">
+            <li>3-5 minutes' walk to Levesque Street Shops bus stop, served by routes 97R, 942, 966.</li>
+            <li>4 minutes' walk to McPhail Street bus stop, with route 933 directly to Auckland CBD, convenient for AUT and University of Auckland.</li>
+        </ul>
+        <ul class="jp">
+            <li>Levesque Street Shopsバス停まで徒歩3〜5分、97R、942、966路線が利用可能。</li>
+            <li>McPhail Streetバス停まで徒歩4分、933路線でオークランドCBDへ直行、AUTやオークランド大学へのアクセスが便利。</li>
+        </ul>
+
+        <h2 class="zh highlight">周边环境</h2>
+        <h2 class="en highlight">Surroundings</h2>
+        <h2 class="jp highlight">周辺環境</h2>
+        <ul class="zh">
+            <li>Birkenhead College (中学，9-13年级)</li>
+            <li>Birkdale Intermediate (初中，7-8年级)</li>
+            <li>Birkdale North School和Birkdale Primary School (小学，1-6年级)</li>
+        </ul>
+        <ul class="en">
+            <li>Birkenhead College (grades 9-13)</li>
+            <li>Birkdale Intermediate (grades 7-8)</li>
+            <li>Birkdale North School and Birkdale Primary School (grades 1-6)</li>
+        </ul>
+        <ul class="jp">
+            <li>Birkenhead College（9〜13年生）</li>
+            <li>Birkdale Intermediate（7〜8年生）</li>
+            <li>Birkdale North SchoolおよびBirkdale Primary School（1〜6年生）</li>
+        </ul>
+
+        <h2 class="zh highlight">超市购物</h2>
+        <h2 class="en highlight">Shopping</h2>
+        <h2 class="jp highlight">ショッピング</h2>
+        <ul class="zh">
+            <li>附近有一个小型便利店，步行3到5分钟可达。</li>
+            <li>距离PAK'n SAVE超市5.5公里，开车11分钟左右
+ <li>距离Countdown超市3.3公里，开车7分钟左右。</li>
+            <li>附近还有两家华人超市，开车15分钟左右可达，如果你想吃中华料理，华人超市附近也有中餐馆。</li>
+            ※没有车的情况也不用担心，可开车带你购买生活必须品。</li>
+        </ul>
+        <ul class="en">
+            <li>A small convenience store within 3-5 minutes' walk.</li>
+            <li>PAK'n SAVE supermarket 5.5 km away (approximately 11 minutes by car).</li>
+            <li>Countdown supermarket 3.3 km away (approximately 7 minutes by car).</li>
+            <li>There are two Chinese supermarkets nearby, which are about 15 minutes away by car. If you want to eat Chinese food, there are also Chinese restaurants near the Chinese supermarkets.</li>
+            ※Don't worry if you don't have a car, we can drive you to buy daily necessities.</li>
+        </ul>
+     <ul class="jp">
+            <li>近くに小さなコンビニがあり、徒歩3から5分で行けます。</li>
+            <li>PAK'n SAVEスーパーマーケットまで5.5キロ、車で約11分です。</li>
+            <li>Countdownスーパーマーケットまで3.3キロ、車で約7分です。</li>
+            <li>近くには2つの中国人スーパーもあり、車で約15分で行けます。中国料理を食べたい場合は、中国人スーパーの近くに中華料理店もあります。</li>
+             ※車がなくても心配いりません。生活必需品の買い物にお車でお連れします。</li>
+      </ul>
+
+        <h2 class="zh highlight">租客要求</h2>
+        <h2 class="en highlight">Tenant Requirements</h2>
+        <h2 class="jp highlight">賃借人の要求事項</h2>
+        <ul class="zh">
+            <li>不吸烟</li>
+            <li>爱干净，安静的环境的人士</li>
+            ※养宠物需提前商量</li>
+        </ul>
+        <ul class="en">
+            <li>Non-smoker</li>
+            <li>Clean and quiet individuals preferred</li>
+            ※Pets require prior discussion/approval</li>
+        </ul>
+        <ul class="jp">
+         <li>禁煙</li>
+        <li>清潔で静かな環境を好む方</li>
+        <li>※ペットの飼育については事前に相談が必要です</li>
+</ul>
+
+
+
+        <h2 class="zh highlight">欢迎有意向者前来看房</h2>
+        <h2 class="en highlight">Prospective tenants are welcome to view the property</h2>
+        <h2 class="jp highlight">見学希望者歓迎</h2>
+
+        <p class="zh">如有任何问题或需要预约看房，请联系: 027-451-7685</p>
+        <p class="en">For any inquiries or to schedule a viewing, please contact: 027-451-7685</p>
+         <p class="jp">ご質問や見学の予約が必要な場合は、お問い合わせください：027-451-7685</p>
+    </section>
+
+<footer>
+    <p class="zh">&copy; 2024 房屋招租 - Rental Notice. 版权所有.</p>
+    <p class="en">&copy; 2024 House for Rent - Rental Notice. All rights reserved.</p>
+    <p class="jp">&copy; 2024 賃貸住宅 - 賃貸に関するお知らせ。.</p>
+</footer>
+          
