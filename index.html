@@ -15,9 +15,19 @@
                 }
             });
         }
+
+        function decodeContactInfo(encodedInfo) {
+            return atob(encodedInfo);
+        }
+
+        function displayContactInfo() {
+            document.querySelectorAll('.contact-info').forEach(function(elem) {
+                elem.innerHTML = decodeContactInfo(elem.getAttribute('data-encoded'));
+            });
+        }
     </script>
 </head>
-<body onload="switchLanguage('zh')">
+<body onload="switchLanguage('zh'); displayContactInfo();">
     <header>
         <nav>
             <ul>
@@ -80,8 +90,8 @@
             <li>厨房设备（冰箱，炉灶，微波炉，烤箱，烧水壶，电饭煲，果汁搅拌机，吐司机）</li>
             <li>各种厨具（锅碗瓢盆，茶杯等）</li>
             <li>电器设备（60英寸电视，洗衣机，吸尘器）</li>
-            <li>洗浴设施（淋雨室，马桶，洗手池）</li>
-          ※厨房炉灶类型：电陶炉<br>※热水器类型：电热水器</li>
+            <li>洗浴设施（淋浴室，马桶，洗手池）</li>
+            ※厨房炉灶类型：电陶炉<br>※热水器类型：电热水器</li>
           
         </ul>
         <ul class="en">
@@ -91,8 +101,7 @@
             <li>Various kitchen utensils (pots, bowls, ladles, cups, etc.)</li>
             <li>Electrical appliances (60-inch TV, washing machine, vacuum cleaner)</li>
             <li>Bathroom facilities (shower, toilet, sink)</li>
-            ※Kitchen stove type: Electric ceramic stove<br>※Water heater type: Electric water heater
-</li>
+            ※Kitchen stove type: Electric ceramic stove<br>※Water heater type: Electric water heater</li>
 
         </ul>
         <ul class="jp">
@@ -102,8 +111,7 @@
             <li>各種のキッチン用具（鍋、ボウル、おたま、カップなど）</li>
             <li>家電製品（60インチテレビ、洗濯機、掃除機）</li>
             <li>バスルーム設備（シャワー、トイレ、洗面台）</li>
-            ※キッチンコンロの種類：電気コンロ<br>※給湯器の種類：電気給湯器
-</li>
+            ※キッチンコンロの種類：電気コンロ<br>※給湯器の種類：電気給湯器</li>
 
         </ul>
 
@@ -131,145 +139,17 @@
 
         </ul>
 
-        <h2 class="zh highlight">周边环境</h2>
-        <h2 class="en highlight">Surroundings</h2>
-        <h2 class="jp highlight">周辺環境</h2>
-        <ul class="zh">
-            <li>Birkenhead College (中学，9-13年级)</li>
-            <li>Birkdale Intermediate (初中，7-8年级)</li>
-            <li>Birkdale North School和Birkdale Primary School (小学，1-6年级)</li>
-        </ul>
-        <ul class="en">
-            <li>Birkenhead College (grades 9-13)</li>
-            <li>Birkdale Intermediate (grades 7-8)</li>
-            <li>Birkdale North School and Birkdale Primary School (grades 1-6)</li>
-        </ul>
-        <ul class="jp">
-            <li>Birkenhead College（9〜13年生）</li>
-            <li>Birkdale Intermediate（7〜8年生）</li>
-            <li>Birkdale North SchoolおよびBirkdale Primary School（1〜6年生）</li>
-        </ul>
-
-        <h2 class="zh highlight">超市购物</h2>
-        <h2 class="en highlight">Shopping</h2>
-        <h2 class="jp highlight">ショッピング</h2>
-        <ul class="zh">
-            <li>附近有一个小型便利店，步行3到5分钟可达。</li>
-            <li>距离PAK'n SAVE超市5.5公里，开车11分钟左右
- <li>距离Countdown超市3.3公里，开车7分钟左右。</li>
-            <li>附近还有两家华人超市，开车15分钟左右可达，如果你想吃中华料理，华人超市附近也有中餐馆。</li>
-            ※没有车的情况也不用担心，可开车带你购买生活必须品。</li>
-        </ul>
-        <ul class="en">
-            <li>A small convenience store within 3-5 minutes' walk.</li>
-            <li>PAK'n SAVE supermarket 5.5 km away (approximately 11 minutes by car).</li>
-            <li>Countdown supermarket 3.3 km away (approximately 7 minutes by car).</li>
-            <li>There are two Chinese supermarkets nearby, which are about 15 minutes away by car. If you want to eat Chinese food, there are also Chinese restaurants near the Chinese supermarkets.</li>
-            ※Don't worry if you don't have a car, we can drive you to buy daily necessities.</li>
-        </ul>
-     <ul class="jp">
-            <li>近くに小さなコンビニがあり、徒歩3から5分で行けます。</li>
-            <li>PAK'n SAVEスーパーマーケットまで5.5キロ、車で約11分です。</li>
-            <li>Countdownスーパーマーケットまで3.3キロ、車で約7分です。</li>
-            <li>近くには2つの中国人スーパーもあり、車で約15分で行けます。中国料理を食べたい場合は、中国人スーパーの近くに中華料理店もあります。</li>
-             ※車がなくても心配いりません。生活必需品の買い物にお車でお連れします。</li>
-      </ul>
-
-        <h2 class="zh highlight">租客要求</h2>
-        <h2 class="en highlight">Tenant Requirements</h2>
-        <h2 class="jp highlight">賃借人の要求事項</h2>
-        <ul class="zh">
-            <li>不吸烟</li>
-            <li>爱干净，安静的环境的人士</li>
-            ※养宠物需提前商量</li>
-        </ul>
-        <ul class="en">
-            <li>Non-smoker</li>
-            <li>Clean and quiet individuals preferred</li>
-            ※Pets require prior discussion/approval</li>
-        </ul>
-        <ul class="jp">
-         <li>禁煙</li>
-        <li>清潔で静かな環境を好む方</li>
-        <li>※ペットの飼育については事前に相談が必要です</li>
-</ul>
-
-
-
-        <h2 class="zh highlight">欢迎有意向者前来看房</h2>
-        <h2 class="en highlight">Prospective tenants are welcome to view the property</h2>
-        <h2 class="jp highlight">内見希望者歓迎</h2>
-        
-        <p class="zh">如有任何问题或需要预约看房，请联系: 027-451-7685</p>
-        <p class="zh">邮箱: bahong200866@yahoo.co.jp</p>
-        <p class="zh">微信号: O0O0O0God</p>
-        <p class="zh">Facebook账号: Johnny Ba</p>
-        <p class="zh">小红书 ID:11677736814</p>
-        
-        <p class="en">For any inquiries or to schedule a viewing, please contact: 027-451-7685</p>
-        <p class="en">Email: bahong200866@yahoo.co.jp</p>
-        <p class="en">WeChat ID: O0O0O0God</p>
-        <p class="en">Facebook: Johnny Ba</p>
-        <p class="en">xiaohongshu ID:11677736814</p>
-        
-        <p class="jp">ご不明な点や内見の予約については、お問い合わせください: 027-451-7685</p>
-        <p class="jp">メールアドレス: bahong200866@yahoo.co.jp</p>
-        <p class="jp">WeChat ID: O0O0O0God</p>
-        <p class="jp">Facebook: Johnny Ba</p>
-        <p class="jp">xiaohongshu ID:11677736814</p>
-        
-    </section>
- <!-- Inquiry Form Section -->
-    <section id="inquiry">
-        <h2 class="zh main-title">询问栏</h2>
-        <h2 class="en main-title">Inquiry Form</h2>
-        <h2 class="jp main-title">お問い合わせフォーム</h2>
-        <form>
-            <fieldset>
-                <legend class="zh highlight">询问内容</legend>
-                <legend class="en highlight">Inquiry Content</legend>
-                <legend class="jp highlight">内容に関するお問い合わせ</legend>
-                <div>
-                    <label class="zh">个人/法人 *</label>
-                    <label class="en">Individual/Corporate *</label>
-                    <label class="jp">個人/法人 *</label>
-                    <input type="radio" name="type" value="individual" checked> <span class="zh">个人</span> <span class="en">Individual</span> <span class="jp">個人</span>
-                    <input type="radio" name="type" value="corporate"> <span class="zh">法人</span> <span class="en">Corporate</span> <span class="jp">法人</span>
-                </div>
-                <div>
-                    <label class="zh">姓名 *</label>
-                    <label class="en">Name *</label>
-                    <label class="jp">名前 *</label>
-                    <input type="text" name="name" required>
-                </div>
-                <div>
-                    <label class="zh">电子邮件 *</label>
-                    <label class="en">Email *</label>
-                    <label class="jp">メールアドレス *</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div>
-                    <label class="zh">电话号码 *</label>
-                    <label class="en">Phone Number *</label>
-                    <label class="jp">電話番号 *</label>
-                    <input type="tel" name="phone" required>
-                </div>
-                <div>
-                    <label class="zh">留言</label>
-                    <label class="en">Message</label>
-                    <label class="jp">メッセージ</label>
-                    <textarea name="message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="zh">提交</button>
-                <button type="submit" class="en">Submit</button>
-                <button type="submit" class="jp">送信</button>
-            </fieldset>
-        </form>
+         <h2 class="zh highlight">联系信息</h2>
+        <h2 class="en highlight">Contact Information</h2>
+        <h2 class="jp highlight">連絡先情報</h2>
+        <p class="contact-info" data-encoded="MTIzNDU2Nzg5MUBleGFtcGxlLmNvbQ=="></p>
+        <p class="contact-info" data-encoded="KzY0MTIzNDU2Nzg5MUBleGFtcGxlLmNvbQ=="></p>
     </section>
 
-<footer>
-    <p class="zh">&copy; 2024 房间招租 - Rental Notice. 版权所有.</p>
-    <p class="en">&copy; 2024 Room for Rent - Rental Notice. All rights reserved.</p>
-    <p class="jp">&copy; 2024 賃貸住宅 - 賃貸に関するお知らせ。.</p>
-</footer>
-          
+    <footer>
+        <p class="zh">版权所有 © 2024 房屋招租公告. 保留所有权利。</p>
+        <p class="en">Copyright © 2024 Rental Notice. All rights reserved.</p>
+        <p class="jp">著作権 © 2024 賃貸のお知らせ。無断転載を禁じます。</p>
+    </footer>
+</body>
+</html>
