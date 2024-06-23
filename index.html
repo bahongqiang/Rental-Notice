@@ -25,6 +25,13 @@
             display: block; /* 确保图片是块级元素 */
             margin: 0 auto; /* 图片居中 */
         }
+         .overlay-image {
+            position: absolute; /* 绝对定位 */
+            bottom: 10px; /* 距离底部10px，可以根据需要调整 */
+            right: 10px; /* 距离右侧10px，可以根据需要调整 */
+            width: 50px; /* 设置图片宽度为50px，可以根据需要调整 */
+            height: auto; /* 高度自动调整，保持图片比例 */
+        }
     </style>
 </head>
 <body onload="switchLanguage('zh')">
@@ -37,6 +44,7 @@
             </ul>
         </nav>
         <img src="images/房屋图片1.PNG" alt="Rental Notice" class="header-image">
+        <img src="images/组合图片.PNG" alt="Rental Notice" class="header-image">
     </header>
 
     <section id="home">
