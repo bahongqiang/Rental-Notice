@@ -195,6 +195,53 @@
         <p class="en">For any inquiries or to schedule a viewing, please contact: 027-451-7685</p>
          <p class="jp">ご質問や見学の予約が必要な場合は、お問い合わせください：027-451-7685</p>
     </section>
+ <!-- Inquiry Form Section -->
+    <section id="inquiry">
+        <h2 class="zh main-title">询问栏</h2>
+        <h2 class="en main-title">Inquiry Form</h2>
+        <h2 class="jp main-title">お問い合わせフォーム</h2>
+        <form>
+            <fieldset>
+                <legend class="zh highlight">询问内容</legend>
+                <legend class="en highlight">Inquiry Content</legend>
+                <legend class="jp highlight">内容に関するお問い合わせ</legend>
+                <div>
+                    <label class="zh">个人/法人 *</label>
+                    <label class="en">Individual/Corporate *</label>
+                    <label class="jp">個人/法人 *</label>
+                    <input type="radio" name="type" value="individual" checked> <span class="zh">个人</span> <span class="en">Individual</span> <span class="jp">個人</span>
+                    <input type="radio" name="type" value="corporate"> <span class="zh">法人</span> <span class="en">Corporate</span> <span class="jp">法人</span>
+                </div>
+                <div>
+                    <label class="zh">姓名 *</label>
+                    <label class="en">Name *</label>
+                    <label class="jp">名前 *</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div>
+                    <label class="zh">电子邮件 *</label>
+                    <label class="en">Email *</label>
+                    <label class="jp">メールアドレス *</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label class="zh">电话号码 *</label>
+                    <label class="en">Phone Number *</label>
+                    <label class="jp">電話番号 *</label>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div>
+                    <label class="zh">留言</label>
+                    <label class="en">Message</label>
+                    <label class="jp">メッセージ</label>
+                    <textarea name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="zh">提交</button>
+                <button type="submit" class="en">Submit</button>
+                <button type="submit" class="jp">送信</button>
+            </fieldset>
+        </form>
+    </section>
 
 <footer>
     <p class="zh">&copy; 2024 房屋招租 - Rental Notice. 版权所有.</p>
