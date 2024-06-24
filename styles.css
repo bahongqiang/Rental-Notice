@@ -58,8 +58,8 @@ h1, h2 {
 
 .overlay-image {
     position: absolute; /* 绝对定位 */
-    bottom: -100px; /* 距离底部-100px，可以根据需要调整 */
+    bottom: -50px; /* 距离底部-100px，可以根据需要调整 */
     left: 0px; /* 距离左侧0px，可以根据需要调整 */
-    width: 300px; /* 设置图片宽度为300px，可以根据需要调整 */
+    width: 200px; /* 设置图片宽度为200px，可以根据需要调整 */
     height: auto; /* 高度自动调整，保持图片比例 */
 }
